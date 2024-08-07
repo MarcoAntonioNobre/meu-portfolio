@@ -8,5 +8,6 @@
     <orderEntry type="library" name="bootstrap" level="application" />
     <orderEntry type="library" name="bootstrap-icons" level="application" />
     <orderEntry type="library" name="MaterialDesign-Webfont" level="application" />
+    <orderEntry type="library" name="flowbite" level="application" />
   </component>
 </module>
