@@ -6,33 +6,79 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Meu portfólio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-          integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css"
           href="https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/7.0.96/css/materialdesignicons.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.css" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
 
 </head>
 
-<body>
-<p>Meu LinkedIn</p>
-<div class="badge-base LI-profile-badge" data-locale="pt_BR" data-size="medium" data-theme="light"
-     data-type="HORIZONTAL" data-vanity="marco-nobre-730a02194" data-version="v1"><a
-        class="badge-base__link LI-simple-link"
-        href="https://br.linkedin.com/in/marco-nobre-730a02194?trk=profile-badge">Marco Nobre</a>
+<body class="bg-gray-800 text-white">
+<nav class="bg-gray-600 border-gray-200 dark:bg-gray-900">
+    <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+        <a href="#inicio" class="flex items-center space-x-3 rtl:space-x-reverse">
+            <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Marco Nobre</span>
+        </a>
+        <button data-collapse-toggle="navbar-default" type="button"
+                class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                aria-controls="navbar-default" aria-expanded="false">
+            <span class="sr-only">Menu</span>
+            <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M1 1h15M1 7h15M1 13h15"/>
+            </svg>
+        </button>
+        <div class="hidden w-full md:block md:w-auto bg-gray-600" id="navbar-default">
+            <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-gray-600 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+                <li>
+                    <a href="#inicio"
+                       class="block py-2 px-3 text-white rounded md:bg-transparent md:text-white md:p-0 dark:text-white md:dark:text-white hover:bg-gray-500"
+                       aria-current="page">Início</a>
+                </li>
+                <li>
+                    <a href="#sobre"
+                       class="block py-2 px-3 text-white rounded hover:bg-gray-500 md:hover:bg-transparent md:border-0 md:hover:text-gray-600 md:p-0 md:dark:hover:text-gray-100 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Sobre</a>
+                </li>
+                <li>
+                    <a href="#projetos"
+                       class="block py-2 px-3 text-white rounded hover:bg-gray-500 md:hover:bg-transparent md:border-0 md:hover:text-gray-600 md:p-0 md:dark:hover:text-gray-100 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Projetos</a>
+                </li>
+                <li>
+                    <a href="#contato"
+                       class="block py-2 px-3 text-white rounded hover:bg-gray-500 md:hover:bg-transparent md:border-0 md:hover:text-gray-600 md:p-0 md:dark:hover:text-gray-100 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Contato</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="container mx-auto p-4">
+    <div id="inicio" class="grid grid-cols-2">
+        <div>
+
+        </div>
+    </div>
+
+    <div id="sobre">
+
+    </div>
+
+    <div id="projetos">
+
+    </div>
+
+    <div id="contato">
+
+    </div>
 </div>
 
 
+
 <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-        crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
-        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
-        crossorigin="anonymous"></script>
 <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
+<script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js"></script>
 <script src="./js/script.js"></script>
 </body>
 
