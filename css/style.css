@@ -1,0 +1,95 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+main {
+    padding-top: 64px;
+}
+.alturaInicio{
+    min-height: 80dvh;
+}
+.alturaSobreMim{
+    min-height: 35dvh;
+}
+.alturaMeusProjetos{
+    min-height: 30dvh;
+}
+.alturaMeusContatos{
+    min-height: 30dvh;
+}
+.fontSite{
+    font-family: 'Barlow Condensed', sans-serif;
+}
+.fontStyle{
+    font-family: "Playfair Display", serif;
+}
+.textoSeja{
+    font-size: 9dvh;
+}
+.textoBemVindo{
+    font-size: 8vh;
+}
+.textoSobremim{
+    font-size: 5vh;
+    font-family: "Playfair Display", serif;
+    text-align: center;
+}
+.textoMeusProjetos{
+    font-family: "Playfair Display", serif;
+    font-size: 5vh;
+    text-align: center;
+}
+.textoContato{
+    font-family: "Playfair Display", serif;
+    font-size: 5vh;
+    text-align: center;
+}
+.img{
+    height: 60%;
+}
+
+.breve{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 100%;
+    transition: 0.2s;
+}
+.card {
+    border-radius: 10px;
+    width: 190px;
+    height: 254px;
+    background: rgb(46, 44, 44);
+}
+.card:hover {
+    opacity: 0.8;
+    background: rgb(87, 87, 87);
+    .breve{
+        scale: 1.02;
+        color: #ffffff;
+    }
+}
+
+.insta, .linkedin, .github, .whatsapp {
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
+    text-decoration: none;
+    display: inline-block;
+    transition: background 1s ease;
+}
+
+.insta:hover {
+    background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+}
+
+.linkedin:hover {
+    background: linear-gradient(45deg, #0077B5, #005582);
+}
+
+.github:hover {
+    background: linear-gradient(45deg, #000000, #402670);
+}
+
+.whatsapp:hover {
+    background: linear-gradient(45deg, #25D366, #128C7E);
+}
