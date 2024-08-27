@@ -1,16 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-main {
-    padding-top: 64px;
-}
+
 body {
     position: relative;
     background-color: rgba(0, 0, 0, 0.55);
     margin: 0;
     z-index: 3;
 }
-
 .efeitoVidro {
     position: absolute;
     top: 0;
@@ -34,7 +31,6 @@ body {
     z-index: -1;
     background-image: url("../img/backgrounImage.jpg");
 }
-
 
 .alturaInicio {
     min-height: 80dvh;
