@@ -4,66 +4,116 @@
 main {
     padding-top: 64px;
 }
-.alturaInicio{
+body {
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.55);
+    margin: 0;
+    z-index: 3;
+}
+
+.efeitoVidro {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(54, 48, 48, 0.58);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    z-index: 2;
+}
+
+.backgroundImage {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+    background-image: url("../img/backgrounImage.jpg");
+}
+
+
+.alturaInicio {
     min-height: 80dvh;
 }
-.alturaSobreMim{
+
+.alturaSobreMim {
     min-height: 35dvh;
 }
-.alturaMeusProjetos{
+
+.alturaMeusProjetos {
     min-height: 30dvh;
 }
-.alturaMeusContatos{
+
+.alturaMeusContatos {
     min-height: 30dvh;
 }
-.fontSite{
+
+.fontName{
+    font-family: 'Barlow Condensed', sans-serif !important;
+}
+
+.fontSite {
     font-family: 'Barlow Condensed', sans-serif;
 }
-.fontStyle{
+
+.fontStyle {
     font-family: "Playfair Display", serif;
 }
-.textoSeja{
+
+.textoSeja {
     font-size: 9dvh;
 }
-.textoBemVindo{
+
+.textoBemVindo {
     font-size: 8vh;
 }
-.textoSobremim{
+
+.textoSobremim {
     font-size: 5vh;
     font-family: "Playfair Display", serif;
     text-align: center;
 }
-.textoMeusProjetos{
+
+.textoMeusProjetos {
     font-family: "Playfair Display", serif;
     font-size: 5vh;
     text-align: center;
 }
-.textoContato{
+
+.textoContato {
     font-family: "Playfair Display", serif;
     font-size: 5vh;
     text-align: center;
 }
-.img{
+
+.img {
     height: 60%;
 }
 
-.breve{
+.breve {
     justify-content: center;
     align-items: center;
     display: flex;
     height: 100%;
     transition: 0.2s;
 }
+
 .card {
     border-radius: 10px;
     width: 190px;
     height: 254px;
     background: rgb(46, 44, 44);
 }
+
 .card:hover {
     opacity: 0.8;
     background: rgb(87, 87, 87);
-    .breve{
+
+    .breve {
         scale: 1.02;
         color: #ffffff;
     }
