@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+main{
+    margin-top: 60px;
+}
+
 body {
     position: relative;
     background-color: rgba(0, 0, 0, 0.55);
