@@ -21,3 +21,7 @@ whatsapp.addEventListener('click', function () {
     const whatsappUrl = `https://wa.me/${numero}?text=${mensagem}`;
     window.open(whatsappUrl, '_blank');
 });
+
+const copy = document.getElementById('copy');
+const ano = new Date().getFullYear();
+copy.innerHTML = '&copy Marco Nobre, '+ ano +'. Todos os direitos reservados.'
