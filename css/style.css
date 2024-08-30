@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-main{
+main {
     margin-top: 60px;
 }
 
@@ -12,6 +12,7 @@ body {
     margin: 0;
     z-index: 3;
 }
+
 .efeitoVidro {
     position: absolute;
     top: 0;
@@ -52,7 +53,7 @@ body {
     min-height: 30dvh;
 }
 
-.fontName{
+.fontName {
     font-family: 'Barlow Condensed', sans-serif !important;
 }
 
@@ -142,4 +143,24 @@ body {
 
 .whatsapp:hover {
     background: linear-gradient(45deg, #25D366, #128C7E);
+}
+
+.dvh50 {
+    min-height: 50dvh;
+}
+
+.dvh60 {
+    min-height: 60dvh;
+}
+
+.dvh70 {
+    min-height: 70dvh;
+}
+
+.dvh80 {
+    min-height: 80dvh;
+}
+
+.alturaImagens{
+    height: 80%;
 }

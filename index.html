@@ -38,11 +38,6 @@
                        aria-current="page">Início</a>
                 </li>
                 <li>
-                    <a href="#sobreMim"
-                       class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Sobre
-                        mim</a>
-                </li>
-                <li>
                     <a href="#projetos"
                        class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Projetos</a>
                 </li>
@@ -54,48 +49,44 @@
         </div>
     </div>
 </nav>
-<main class="text-white md:container mx-auto">
+<main class="text-white container mx-auto">
     <div id="inicio" class="alturaInicio grid grid-cols-1 md:grid-cols-2">
         <div class="flex items-center justify-center">
             <div class="md:text-left">
                 <p class="textoSeja fontStyle">Olá, seja</p>
                 <p class="textoBemVindo fontStyle">Bem-vindo!</p>
-                <p class=""></p>
             </div>
         </div>
-        <div class="flex justify-center">
-            <img src="./img/exemplo-de-codigo.png" alt="Foto de uma página de códigos, com códigos em PHP e HTML"
-                 class="img self-center max-w-sm md:max-w-full">
+        <div class="flex justify-center items-center">
+            <div id="sobreMim" class="alturaSobreMim mt-5 px-4 blocoSobremim">
+                <p class="text-xl">
+                    Olá, meu nome é Marco Antônio e tenho 21 anos.
+                </p>
+                <p class="mt-5 text-xl text-justify">
+                    Conclui um curso técnico em Desenvolvimento de Sistemas em agosto de 2024 e, atualmente, estou me dedicando
+                    a estudos independentes. Durante o curso, construí projetos com CRUDs e Sistemas de Login, layouts
+                    responsivos utilizando o bootstrap, e como backend utilizei o PHP.
+                </p>
+                <p class="mt-5 text-xl text-justify">
+                    Atualmente, estou focado em construir sistemas web e expandir meu conhecimento em novas linguagens e
+                    frameworks. Meu objetivo é continuar crescendo na área de desenvolvimento e enfrentar novos desafios que me
+                    ajudem a evoluir como profissional.
+                </p>
+            </div>
         </div>
     </div>
     <hr>
-    <div id="sobreMim" class="alturaSobreMim mt-5 mb-5 px-4 blocoSobremim">
-        <h3 class="textoSobremim text-center">Sobre mim</h3>
-        <p class="text-xl">
-            Olá, meu nome é Marco Antônio e tenho 21 anos.
-        </p>
-        <p class="mt-5 text-xl text-justify">
-            Conclui um curso técnico em Desenvolvimento de Sistemas em agosto de 2024 e, atualmente, estou me dedicando
-            a estudos independentes. Durante o curso, construí projetos com CRUDs e Sistemas de Login, layouts
-            responsivos utilizando o bootstrap, e como backend utilizei o PHP.
-        </p>
-        <p class="mt-5 text-xl text-justify">
-            Atualmente, estou focado em construir sistemas web e expandir meu conhecimento em novas linguagens e
-            frameworks. Meu objetivo é continuar crescendo na área de desenvolvimento e enfrentar novos desafios que me
-            ajudem a evoluir como profissional.
-        </p>
-    </div>
-    <hr>
+
     <div id="projetos" class="alturaMeusProjetos mt-5 mb-5 px-4">
         <h3 class="textoMeusProjetos text-center">Meus projetos</h3>
         <div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4 gap-4 mt-5">
-            <a href="#"
+            <a href="aplicativo-delivery.html"
                class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
                 <img class="object-cover rounded-t-lg md:h-auto md:w-48 md:rounded-none md:rounded-s-lg"
-                     src="./img/EM%20BREVE.png" alt="">
+                     src="./img/aplicativo-delivery.jpg" alt="">
                 <div class="flex flex-col justify-between p-4 leading-normal">
-                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Em breve</h5>
-                    <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Projeto em desenvolvimento</p>
+                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Aplicativo de Delivery</h5>
+                    <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Página inicial de aplicativo de delivery.</p>
                 </div>
             </a>
             <a href="#"
