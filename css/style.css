@@ -1,142 +1,289 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-main {
-    margin-top: 60px;
-}
-
 body {
-    position: relative;
-    background-color: rgba(0, 0, 0, 0.55);
-    margin: 0;
-    z-index: 3;
+    height: 100dvh;
+    cursor: default;
+    font-family: Playfair Display, open sans-serif;
+    color: white;
 }
 
-.alturaInicio {
-    min-height: 80dvh;
+::selection {
+    color: #028df6;
 }
 
-.alturaSobreMim {
-    min-height: 35dvh;
+.pointer {
+    cursor: pointer;
 }
 
-.alturaMeusProjetos {
-    min-height: 30dvh;
+.height {
+    height: 80dvh;
 }
 
-.alturaMeusContatos {
-    min-height: 30dvh;
+.scrollable-div {
+    max-height: 80vh;
+    margin-top: 8%;
+    overflow: auto;
+    padding: 10px;
 }
 
-.fontName {
-    font-family: 'Barlow Condensed', sans-serif !important;
-}
-
-.fontSite {
-    font-family: 'Barlow Condensed', sans-serif;
-}
-
-.fontStyle {
-    font-family: "Playfair Display", serif;
-}
-
-.textoSeja {
-    font-size: 9dvh;
-}
-
-.textoBemVindo {
-    font-size: 8vh;
-}
-
-.textoSobremim {
-    font-size: 5vh;
-    font-family: "Playfair Display", serif;
-    text-align: center;
-}
-
-.textoMeusProjetos {
-    font-family: "Playfair Display", serif;
-    font-size: 5vh;
-    text-align: center;
-}
-
-.textoContato {
-    font-family: "Playfair Display", serif;
-    font-size: 5vh;
-    text-align: center;
-}
-
-.img {
-    height: 60%;
-}
-
-.breve {
-    justify-content: center;
-    align-items: center;
-    display: flex;
+.display {
     height: 100%;
-    transition: 0.2s;
+    display: flex;
+    flex-direction: column;
 }
 
-.card {
-    border-radius: 10px;
-    width: 190px;
-    height: 254px;
-    background: rgb(46, 44, 44);
-}
 
-.card:hover {
-    opacity: 0.8;
-    background: rgb(87, 87, 87);
+.lista-redes {
+    list-style: none;
+    display: flex;
 
-    .breve {
-        scale: 1.02;
-        color: #ffffff;
+    li {
+        margin: 10px;
+        font-size: 20px;
     }
 }
 
-.insta, .linkedin, .github, .whatsapp {
-    color: white;
-    border-radius: 10px;
-    padding: 10px;
-    text-decoration: none;
-    display: inline-block;
-    transition: background 1s ease;
+.nomeEfuncao {
+    margin-top: 15%;
 }
 
-.insta:hover {
-    background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+@media (min-width: 50px) and (max-width: 576px) {
+    .fontSizeH1 {
+        text-align: center;
+        font-size: 3rem;
+    }
+
+    .fontSizeP {
+        text-align: center;
+        font-size: 25px;
+        color: #F58529;
+    }
+
+    .sobre {
+        margin-top: 30px;
+        font-size: 20px;
+    }
+
+    .redes {
+        margin-top: 25%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .lista-redes {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+
+        li {
+            margin: 10px;
+            font-size: 20px;
+        }
+    }
+
+    .height {
+        height: 60dvh;
+    }
 }
 
-.linkedin:hover {
-    background: linear-gradient(45deg, #0077B5, #005582);
+@media (min-width: 577px) and (max-width: 768px) {
+    .fontSizeH1 {
+        text-align: center;
+        font-size: 3rem;
+    }
+
+    .fontSizeP {
+        text-align: center;
+        font-size: 25px;
+        color: #D62976;
+    }
+
+    .sobre {
+        font-size: 20px;
+    }
+
+    .redes {
+        margin-top: 25%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .lista-redes {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+
+        li {
+            margin: 10px;
+            font-size: 20px;
+        }
+    }
+
+    .height {
+        height: 70dvh;
+    }
+
 }
 
-.github:hover {
-    background: linear-gradient(45deg, #000000, #402670);
+@media (min-width: 767px) and (max-width: 992px) and (min-height: 410px) and (max-height: 979px) {
+    .fontSizeH1 {
+        text-align: center;
+        font-size: 3rem;
+    }
+
+    .fontSizeP {
+        text-align: center;
+        font-size: 25px;
+        color: #028df6;
+    }
+
+    .sobre {
+        margin-top: 30px;
+        font-size: 20px;
+    }
+
+    .redes {
+        margin-top: 20%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .lista-redes {
+        list-style: none;
+        display: flex;
+
+        li {
+            margin: 10px;
+            font-size: 20px;
+        }
+    }
+
+    .height {
+        height: 60dvh;
+    }
 }
 
-.whatsapp:hover {
+@media (min-width: 767px) and (max-width: 992px) and (min-height: 980px) {
+    .fontSizeH1 {
+        text-align: center;
+        font-size: 3rem;
+    }
+
+    .fontSizeP {
+        text-align: center;
+        font-size: 25px;
+        color: blue;
+    }
+
+    .sobre {
+        font-size: 25px;
+    }
+
+    .redes {
+        margin-top: 40%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .lista-redes {
+        list-style: none;
+        display: flex;
+
+        li {
+            margin: 10px;
+            font-size: 20px;
+        }
+    }
+
+    .height {
+        height: 60dvh;
+    }
+}
+
+@media (min-width: 993px) {
+    .nomeEfuncao {
+        margin-top: 15%;
+    }
+
+    .fontSizeH1 {
+        text-align: center;
+        font-size: 5rem;
+    }
+
+    .fontSizeP {
+        text-align: center;
+        font-size: 2rem;
+        color: #25D366;
+    }
+
+    .sobre {
+        text-align: justify;
+        font-size: 20px;
+    }
+
+    .redes {
+        margin-top: 80%;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+
+#instaId:hover {
+    background: linear-gradient(45deg, #D62976, #F58529);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#whatsappId:hover {
     background: linear-gradient(45deg, #25D366, #128C7E);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
-.dvh50 {
-    min-height: 50dvh;
+#linkedinId:hover {
+    background: linear-gradient(45deg, #0077B5, #005582);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
-.dvh60 {
-    min-height: 60dvh;
+#githubId:hover {
+    background: linear-gradient(45deg, #2a2929, #C9D1D3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
-.dvh70 {
-    min-height: 70dvh;
+.scrollable-div::-webkit-scrollbar {
+    /*display: none;*/
+    width: 3px; /* Largura do scrollbar */
+    height: 10px; /* Altura do scrollbar horizontal */
+}
+.scrollable-div::-webkit-scrollbar-track {
+    display: none;
+    background: #2a2929;
+    border-radius: 10px;
+}
+.scrollable-div::-webkit-scrollbar-thumb {
+    background-color: #ffffff;
+    border-radius: 10px;
+    border: none;
+}
+.scrollable-div::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
 }
 
-.dvh80 {
-    min-height: 80dvh;
+::-webkit-scrollbar {
+    width: 5px;
+    height: 8px;
 }
-
-.alturaImagens{
-    height: 80%;
+::-webkit-scrollbar-track {
+    display: none;
+    background: #2a2929;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 10px;
+    border: none;
+}
+::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
 }
