@@ -87,7 +87,32 @@ body {
     .lista-redes {
         display: flex;
         justify-content: center;
-        font-size: 15px;
+        font-size: 20px;
+
+        .bi{
+            display: block;
+        }
+
+        .textoRedes{
+            display: none;
+        }
+
+        .bi-whatsapp{
+            color: #25D366;
+        }
+        .bi-instagram{
+            background: linear-gradient(45deg, #D62976, #F58529);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .bi-linkedin{
+            background: linear-gradient(45deg, #0077B5, #005582);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .bi-github{
+            color: #5c6bc0;
+        }
     }
 
     .height {
@@ -204,6 +229,13 @@ body {
     }
 }
 
+@media (min-width: 993px) and (max-width: 1200px) {
+    .lista-redes {
+        font-size: 18px;
+    }
+
+}
+
 @media (min-width: 993px) {
     .nomeEfuncao {
         margin-top: 6%;
@@ -252,7 +284,7 @@ body {
 }
 
 #githubId:hover {
-    background: linear-gradient(45deg, #2a2929, #C9D1D3);
+    background: linear-gradient(45deg, #5c6bc0, #36438d);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
