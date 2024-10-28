@@ -43,7 +43,7 @@ body {
 }
 
 .fontSizeP{
-    color: #3D1365;
+    color: #d7a2fe;
 }
 
 .imagem {
@@ -86,7 +86,7 @@ body {
 
     .lista-redes {
         display: flex;
-        justify-content: space-around;
+        justify-content: center;
         font-size: 15px;
     }
 
