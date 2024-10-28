@@ -1,5 +1,5 @@
 body {
-    height: 100dvh;
+    height: 100vh;
     cursor: default;
     font-family: Playfair Display, open sans-serif;
     color: white;
@@ -11,41 +11,60 @@ body {
 
 .pointer {
     cursor: pointer;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .height {
-    height: 80dvh;
+    min-height: 80dvh;
 }
 
 .scrollable-div {
-    max-height: 80vh;
-    margin-top: 8%;
+    max-height: 80dvh;
+    margin-top: 5%;
     overflow: auto;
     padding: 10px;
 }
 
 .display {
-    height: 100%;
+    min-height: 100%;
     display: flex;
     flex-direction: column;
 }
 
-
 .lista-redes {
-    list-style: none;
     display: flex;
-
-    li {
-        margin: 10px;
-        font-size: 20px;
-    }
+    justify-content: space-around;
+    font-size: 20px;
 }
 
 .nomeEfuncao {
-    margin-top: 15%;
+    /*margin-top: 5%;*/
+}
+
+.fontSizeP{
+    color: #3D1365;
+}
+
+.imagem {
+    border-radius: 50%;
+}
+
+.divImagem {
+    margin-top: 20%;
+    display: flex;
+    justify-content: center;
+}
+.tecnologias{
+    display: flex;
+    justify-content: center;
 }
 
 @media (min-width: 50px) and (max-width: 576px) {
+    .footer {
+        position: relative;
+    }
+
     .fontSizeH1 {
         text-align: center;
         font-size: 3rem;
@@ -54,29 +73,21 @@ body {
     .fontSizeP {
         text-align: center;
         font-size: 25px;
-        color: #F58529;
     }
 
     .sobre {
-        margin-top: 30px;
-        font-size: 20px;
+        text-align: justify;
+        margin: 10%;
     }
 
     .redes {
-        margin-top: 25%;
-        display: flex;
-        justify-content: center;
+        margin-top: 15%;
     }
 
     .lista-redes {
-        list-style: none;
         display: flex;
-        flex-direction: column;
-
-        li {
-            margin: 10px;
-            font-size: 20px;
-        }
+        justify-content: space-around;
+        font-size: 15px;
     }
 
     .height {
@@ -85,6 +96,10 @@ body {
 }
 
 @media (min-width: 577px) and (max-width: 768px) {
+    .footer {
+        position: relative;
+    }
+
     .fontSizeH1 {
         text-align: center;
         font-size: 3rem;
@@ -93,7 +108,6 @@ body {
     .fontSizeP {
         text-align: center;
         font-size: 25px;
-        color: #D62976;
     }
 
     .sobre {
@@ -101,20 +115,12 @@ body {
     }
 
     .redes {
-        margin-top: 25%;
-        display: flex;
-        justify-content: center;
+        margin-top: 15%;
     }
 
     .lista-redes {
-        list-style: none;
         display: flex;
-        flex-direction: column;
-
-        li {
-            margin: 10px;
-            font-size: 20px;
-        }
+        justify-content: space-around;
     }
 
     .height {
@@ -124,6 +130,10 @@ body {
 }
 
 @media (min-width: 767px) and (max-width: 992px) and (min-height: 410px) and (max-height: 979px) {
+    .footer {
+        position: relative;
+    }
+
     .fontSizeH1 {
         text-align: center;
         font-size: 3rem;
@@ -132,7 +142,6 @@ body {
     .fontSizeP {
         text-align: center;
         font-size: 25px;
-        color: #028df6;
     }
 
     .sobre {
@@ -142,8 +151,6 @@ body {
 
     .redes {
         margin-top: 20%;
-        display: flex;
-        justify-content: center;
     }
 
     .lista-redes {
@@ -162,6 +169,10 @@ body {
 }
 
 @media (min-width: 767px) and (max-width: 992px) and (min-height: 980px) {
+    .footer {
+        position: relative;
+    }
+
     .fontSizeH1 {
         text-align: center;
         font-size: 3rem;
@@ -170,7 +181,7 @@ body {
     .fontSizeP {
         text-align: center;
         font-size: 25px;
-        color: blue;
+
     }
 
     .sobre {
@@ -179,18 +190,13 @@ body {
 
     .redes {
         margin-top: 40%;
-        display: flex;
-        justify-content: center;
     }
 
     .lista-redes {
         list-style: none;
         display: flex;
-
-        li {
-            margin: 10px;
-            font-size: 20px;
-        }
+        margin: 10px;
+        font-size: 20px;
     }
 
     .height {
@@ -200,18 +206,17 @@ body {
 
 @media (min-width: 993px) {
     .nomeEfuncao {
-        margin-top: 15%;
+        margin-top: 6%;
     }
 
     .fontSizeH1 {
         text-align: center;
-        font-size: 5rem;
+        font-size: 4rem;
     }
 
     .fontSizeP {
         text-align: center;
         font-size: 2rem;
-        color: #25D366;
     }
 
     .sobre {
@@ -220,9 +225,10 @@ body {
     }
 
     .redes {
-        margin-top: 80%;
+        margin-top: 60px;
         display: flex;
         justify-content: center;
+
     }
 }
 
@@ -256,16 +262,19 @@ body {
     width: 3px; /* Largura do scrollbar */
     height: 10px; /* Altura do scrollbar horizontal */
 }
+
 .scrollable-div::-webkit-scrollbar-track {
     display: none;
     background: #2a2929;
     border-radius: 10px;
 }
+
 .scrollable-div::-webkit-scrollbar-thumb {
     background-color: #ffffff;
     border-radius: 10px;
     border: none;
 }
+
 .scrollable-div::-webkit-scrollbar-thumb:hover {
     background-color: #555;
 }
@@ -274,16 +283,19 @@ body {
     width: 5px;
     height: 8px;
 }
+
 ::-webkit-scrollbar-track {
     display: none;
     background: #2a2929;
     border-radius: 10px;
 }
+
 ::-webkit-scrollbar-thumb {
     background-color: #888;
     border-radius: 10px;
     border: none;
 }
+
 ::-webkit-scrollbar-thumb:hover {
     background-color: #555;
 }
