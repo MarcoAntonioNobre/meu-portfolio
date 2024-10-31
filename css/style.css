@@ -154,7 +154,7 @@ body {
 
 }
 
-@media (min-width: 767px) and (max-width: 992px) and (min-height: 410px) and (max-height: 979px) {
+@media (min-width: 767px) and (max-width: 992px) and (max-height: 979px) {
     .footer {
         position: relative;
     }
