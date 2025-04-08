@@ -1,0 +1,81 @@
+@import 'tailwindcss';
+
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+@source '../**/*.blade.php';
+@source '../**/*.js';
+
+@theme {
+    --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+    'Segoe UI Symbol', 'Noto Color Emoji';
+}
+
+.max-width {
+    width: 100%;
+}
+
+.width-menu-mobile-navbar {
+    width: 98%;
+    margin: 3px 4px 3px 4px;
+}
+
+.box-shadow-card {
+    box-shadow: 0 0 1em #45556c;
+}
+
+body {
+    transition: background-color 0.3s, color 0.3s;
+}
+
+
+/* Tema escuro */
+body.dark {
+    background-color: #0f172b;
+    color: #f5f5f4;
+
+    .navbar-theme{
+        background-color: #020628;
+        color: #f5f5f4;
+    }
+    .mobile-menu-theme{
+        background-color: #020628;
+        color: #f5f5f4;
+    }
+
+    .footer-theme{
+        background-color: #020628;
+        color: #f5f5f4;
+    }
+
+    .card-theme{
+        background-color: #364153;
+        color: #f5f5f4;
+    }
+
+    .box-shadow-card {
+        box-shadow: 0 0 1em #202934;
+    }
+
+}
+
+
+/*
+        Theme Dark
+
+        Body
+    #0f172b -> background
+    #f5f5f4 -> color
+
+        Navbar
+    #020628 -> background
+    #f5f5f4 -> color
+
+        Footer
+    #020628 -> background
+    #f5f5f4 -> color
+
+        Card
+    #364153 -> background
+    #f5f5f4 -> color
+
+*/
