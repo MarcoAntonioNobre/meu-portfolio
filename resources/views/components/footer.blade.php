@@ -26,7 +26,11 @@
             </div>
         </div>
     </div>
-    <div class="flex justify-center">
-        <p class="text-xs">&copy; Marco Nobre - {{ date('Y') }}</p>
+    <div class="flex justify-center items-center mx-5">
+        <p class="mt-2 text-sm">Viva como se fosse morrer amanhã. Aprenda como se fosse viver para sempre. - Mahatma
+            Gandhi</p>
+    </div>
+    <div class="flex justify-center items-center mt-5">
+        <p class="text-xs">&copy; {{ date('Y') }} Marco Nobre. Todos os direitos reservados.</p>
     </div>
 </footer>
